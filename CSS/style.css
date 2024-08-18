@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  outline: none;
+}
+
+body {
+  background: url(../IMG/background.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 500px;
+  padding-top: 4em;
+}
+
+.conteiner-tasks {
+  background-color: rgb(203, 203, 203);
+  padding: 20px;
+  border-radius: 5px;
+}
+#form-add-taks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3em;
+  margin-bottom: 4em;
+}
+#form-add-taks > input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+#form-add-taks > button {
+  background-color: rgb(0, 50, 0);
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#form-add-taks > button:hover {
+  background-color: rgb(0, 121, 0);
+}
+
+.tasks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  margin-top: 1em;
+}
+.tasks p {
+  flex: 1;
+}
+.tasks img {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+.done {
+  background-color: #8fac55;
+  text-decoration: line-through;
+  color: white;
+}
